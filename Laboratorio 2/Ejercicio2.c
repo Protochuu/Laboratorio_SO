@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/types.h>
 
 int main(){
 
@@ -15,7 +16,7 @@ int main(){
                 break;                
             }
             else{
-                printf("Proceso hijo %d pid: %d",i,pid1);
+                printf("Proceso hijo %d pid 1: %d \n",i,pid1);
             }
         }
         sleep(5);
@@ -25,7 +26,7 @@ int main(){
                 break;                
             }
             else{
-                printf("Proceso hijo %d pid: %d",i,pid2);
+                printf("Proceso hijo %d pid 2: %d \n",i,pid2);
             }
         }
         sleep(5);
@@ -35,7 +36,7 @@ int main(){
                 break;                
             }
             else{
-                printf("Proceso hijo %d pid: %d",i,pid3);
+                printf("Proceso hijo %d pid 3: %d \n",i,pid3);
             }
         }
     }
